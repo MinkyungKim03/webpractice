@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김민경 웹페이지 실습</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7dbea; /* 연한 핑크 파스텔톤 배경 */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f9a7b0; /* 연한 빨간 파스텔톤 헤더 */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* 상대 위치 설정 */
+        }
+
+        h1 {
+            margin: 0; /* 제목의 margin을 0으로 설정하여 여백 제거 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+            padding-bottom: 75px; /* 하단 여백 추가 */
+        }
+
+        .cute-image {
+            position: absolute; /* 절대 위치 설정 */
+            top: calc(100% - 100px); /* 상단 여백을 화면 하단에서 100px 위에 위치하도록 설정 */
+            left: 50%; /* 가운데 정렬 */
+            transform: translateX(-50%); /* 수평 가운데 정렬 */
+            max-width: 100px; /* 최대 너비 설정 */
+            height: auto; /* 높이 자동 조정 */
+        }
+
+        nav {
+            background-color: #fbb1c1; /* 연한 핑크 파스텔톤 네비게이션 */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white; 
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #ffffff; /* 연한 흰색 백그라운드 */
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #f78fb3; /* 연한 분홍 파스텔톤 제목 */
+            margin-top: 0;
+        }
+
+        section p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #f78fb3; /* 연한 분홍 파스텔톤 선 */
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fbb1c1; /* 연한 핑크 파스텔톤 푸터 */
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>김민경 웹페이지 실습</h1>
+        <img src="character.png" alt="귀여운 루피" class="cute-image">
+    </header>
+    <nav>
+        <a href="#week1">1주차</a>
+        <a href="#week2">2주차</a>
+        <a href="#week3">3주차</a>
+        <a href="#week4">4주차</a>
+        <a href="#week5">5주차</a>
+    </nav>
+    <section id="week1">
+        <h2>1주차 실습</h2>
+        <p>- html 파일 만들기 <a href="helloworld.html" style="color: #f9a7b0;">helloworld.html</a></p>
+        <hr>
+    </section>
+    <section id="week2">
+        <h2>2주차 실습</h2>
+        <p>- 태그 선택자 <a href="login.html" style="color: #f9a7b0;">login.html</a></p>
+        <p>- 아이디 선택자 <a href="loginid.html" style="color: #f9a7b0;">loginid.html</a></p>
+        <p>- 클래스 선택자 <a href="loginclass.html" style="color: #f9a7b0;">loginclass.html</a></p>
+        <p>- 부트스트랩 <a href="bootstrap.html" style="color: #f9a7b0;">bootstrap.html</a></p>
+        <p>- 테이블 <a href="table.html" style="color: #f9a7b0;">table.html</a></p>
+        <p>- 내비게이션 바 <a href="buttons.html" style="color: #f9a7b0;">buttons.html</a></p>
+        <p>- 웹 ui 생성 <a href="sign-in.html" style="color: #f9a7b0;">sign-in.html</a></p>
+        <hr>
+    </section>
+    <section id="week3">
+        <h2>3주차 실습</h2>
+        <p>- 제목 표현 <a href="text_header.html" style="color: #f9a7b0;">text_header.html</a></p>
+        <p>- 본문 단락 구분 <a href="text_paragraph.html" style="color: #f9a7b0;">text_paragraph.html</a></p>
+        <p>- 제목과 본문 태그의 활용 <a href="text_content.html" style="color: #f9a7b0;">text_content.html</a></p>
+        <p>- 하이퍼링크 설정 > 특정 웹 페이지에 연결하기 <a href="text_anchor.html" style="color: #f9a7b0;">text_anchor.html</a></p>
+        <p>- 하이퍼링크 설정 > 웹 페이지 내부에 연결하기 <a href="text_anchorInner.html" style="color: #f9a7b0;">text_anchorInner.html</a></p>
+        <p>- 다양한 글자 모양 <a href="text_font.html" style="color: #f9a7b0;">text_font.html</a></p>
+        <p>- 순서가 없는 기본 목록 만들기 <a href="list_unordered.html" style="color: #f9a7b0;">list_unordered.html</a></p>
+        <p>- 순서가 있는 기본 목록 만들기 <a href="list_ordered.html" style="color: #f9a7b0;">list_ordered.html</a></p>
+        <p>- 중첩 목록 만들기 <a href="nested_list.html" style="color: #f9a7b0;">nested_list.html</a></p>
+        <p>- 기본 표 만들기 <a href="table_basic.html" style="color: #f9a7b0;">table_basic.html</a></p>
+        <p>- 행, 열 병합 표 만들기 <a href="table_span.html" style="color: #f9a7b0;">table_span.html</a></p>
+        <p>- 기본 입력 양식 태그 <a href="form_basic.html" style="color: #f9a7b0;">form_basic.html</a></p>
+        <p>- 간단한 입력 양식 생성 <a href="form_radio.html" style="color: #f9a7b0;">form_radio.html</a></p>
+        <p>- 선택 가능한 입력 양식 > 한 항목만 선택하기 <a href="form_selectBasic.html" style="color: #f9a7b0;">form_selectBasic.html</a></p>
+        <p>- 선택 가능한 입력 양식 > 여러 항목 선택하기 <a href="form_selectMulti.html" style="color: #f9a7b0;">form_selectMulti.html</a></p>
+        <p>- 선택 가능한 입력 양식 > 선택 옵션 묶기: optgroup 태그 사용 <a href="form_selectGroup.html" style="color: #f9a7b0;">form_selectGroup.html</a></p>
+        <p>- 선택 가능한 입력 양식 > 선택 옵션 묶기: fieldset, legend 태그 사용 <a href="form_group.html" style="color: #f9a7b0;">form_group.html</a></p>
+        <p>- 공간을 블록 형식으로 분할하기 <a href="space_block.html" style="color: #f9a7b0;">space_block.html</a></p>
+        <p>- 공간을 인라인 형식으로 분할하기 <a href="space_inline.html" style="color: #f9a7b0;">space_inline.html</a></p>
+        <p>- 시맨틱 태그를 이용한 레이아웃 구성 <a href="space_semantic.html" style="color: #f9a7b0;">space_semantic.html</a></p>
+        <hr>
+    </section>
+    <section id="week4">
+        <h2>4주차 실습</h2>
+        <p>- 스타일시트 <a href="selector_basic.html" style="color: #f9a7b0;">selector_basic.html</a></p>
+        <p>- 전체 선택자 <a href="default_wildcard.html" style="color: #f9a7b0;">default_wildcard.html</a></p>
+        <p>- 태그 선택자 <a href="default_tag.html" style="color: #f9a7b0;">default_tag.html</a></p>
+        <p>- 아이디 선택자 <a href="default_id.html" style="color: #f9a7b0;">default_id.html</a></p>
+        <p>- 클래스 선택자 1개 사용 <a href="default_class.html" style="color: #f9a7b0;">default_class.html</a></p>
+        <p>- 클래스 선택자 여러개 사용 <a href="default_multiClass.html" style="color: #f9a7b0;">default_multiClass.html</a></p>
+        <p>- 속성 선택자 <a href="attribute_basic.html" style="color: #f9a7b0;">attribute_basic.html</a></p>
+        <p>- 후손 선택자와 자손 선택자 기본 <a href="desc_basic.html" style="color: #f9a7b0;">desc_basic.html</a></p>
+        <p>- 후손 선택자 <a href="desc_descendants.html" style="color: #f9a7b0;">desc_descendants.html</a></p>
+        <p>- 자손 선택자 <a href="desc_children.html" style="color: #f9a7b0;">desc_children.html</a></p>
+        <p>- table 태그 요소 선택할 때 자손 선택자 <a href="desc_tableWithChildren.html" style="color: #f9a7b0;">desc_tableWithChildren table</a></p>
+        <p>- 반응 선택자 <a href="etc_action.html" style="color: #f9a7b0;">etc_action.html</a></p>
+        <p>- 상태 선택자 <a href="etc_state.html" style="color: #f9a7b0;">etc_state.html</a></p>
+        <p>- 구조 선택자 <a href="etc_structure.html" style="color: #f9a7b0;">etc_structure.html</a></p>
+        <p>- 구조 선택자 사용시 주의사항 <a href="etc_structureFalse.html" style="color: #f9a7b0;">etc_structureFalse.html</a></p>
+        <p>- HTML 페이지 만들기 <a href="size_basic.html" style="color: #f9a7b0;">size_basic.html</a></p>
+        <p>- 2% 단위 적용하기 <a href="size_percent.html" style="color: #f9a7b0;">size_percent.html</a></p>
+        <p>- em 단위 적용하기 <a href="size_em.html" style="color: #f9a7b0;">size_em.html</a></p>
+        <p>- px 단위 적용하기 <a href="size_pixel.html" style="color: #f9a7b0;">size_pixel.html</a></p>
+        <hr>
+    </section>
+    <section id="week5">
+        <h2>5주차 실습</h2>
+        <p>- HTML 태그 속성으로 이벤트 처리 <a href="evthtml.html" style="color: #f9a7b0;">evthtml.html</a></p>
+        <p>- 자바스크립트 영역에서 이벤트 처리 <a href="evtdom.html" style="color: #f9a7b0;">evtdom.html</a></p>
+        <p>- addEventListener로 이벤트 등록 <a href="evtlistener.html" style="color: #f9a7b0;">evtlistener.html</a></p>
+        <p>- 이벤트 객체 추가 <a href="evtobj.html" style="color: #f9a7b0;">evtobj.html</a></p>
+        <p>- 이벤트 핸들러 <a href="evthandle.html" style="color: #f9a7b0;">evthandle.html</a></p>
+        <p>- 클래스 정의 후 객체 생성 <a href="evtclass.html" style="color: #f9a7b0;">evtclass.html</a></p>
+        <p>- 이벤트 리스너와 콜백 함수 <a href="evtlsncb.html" style="color: #f9a7b0;">evtlsncb.html</a></p>
+        <hr>
+    </section>
+    <footer>
+        © 2024 김민경 웹페이지 실습
+    </footer>
+</body>
+
+</html>
